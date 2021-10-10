@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import "../styles/checkbox.css";
-import { Checkbox, VStack } from "@chakra-ui/react";
+import { Checkbox } from "@chakra-ui/react";
 export const Custombox = () => {
   return (
     <Box className="checkbox" w="32" mr="4">

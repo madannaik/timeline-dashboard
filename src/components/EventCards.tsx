@@ -4,12 +4,11 @@ import {
   Button,
   Divider,
   Flex,
-  Heading,
   Text,
   Avatar,
   AvatarGroup,
 } from "@chakra-ui/react";
-import { LockIcon, TimeIcon } from "@chakra-ui/icons";
+import { TimeIcon } from "@chakra-ui/icons";
 import Location from "../assets/Vector.svg";
 type EventCardProps = {
   color: string;
