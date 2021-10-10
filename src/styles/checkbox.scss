@@ -3,6 +3,10 @@
   padding-top: 0.5rem;
   &__lab {
     padding-left: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
   }
   &__inp {
     display: none;

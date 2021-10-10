@@ -1,13 +1,14 @@
 import React from "react";
 import { Flex, Heading } from "@chakra-ui/react";
 import { Button, Text } from "@chakra-ui/react";
-import { PlusSquareIcon } from "@chakra-ui/icons";
+// import { PlusSquareIcon } from "@chakra-ui/icons";
 import { EventCards } from "./EventCards";
-
+import PlusSquareIcon from "../assets/icon.svg";
 export const Events = () => {
   return (
     <Flex
-      minHeight="100vh"
+      // minHeight="100vh"
+      height="100%"
       bg="primary.100"
       flexDirection="column"
       width="100%"
@@ -16,8 +17,14 @@ export const Events = () => {
       paddingRight="6"
     >
       <Flex justifyContent="space-between">
-        <Heading size="sm">Events</Heading>
-        <Button variant="link" rightIcon={<PlusSquareIcon />}>
+        <Heading size="md">Events</Heading>
+        <Button
+          variant="link"
+          rightIcon={<img alt="plus-icon" src={PlusSquareIcon} />}
+          _focus={{
+            outline: "none",
+          }}
+        >
           View all
         </Button>
       </Flex>
@@ -26,7 +33,6 @@ export const Events = () => {
           color="primary.300"
           m="0"
           fontSize={"1rem"}
-          fontWeight="500"
           bg="transparent"
           _hover={{
             backgroundColor: "primary.200",
@@ -43,17 +49,20 @@ export const Events = () => {
           _hover={{
             backgroundColor: "primary.200",
           }}
+          _focus={{
+            outline: "none",
+          }}
           bg="transparent"
         >
           Remainders
         </Button>
       </Flex>
-      <Text paddingTop="3" fontSize="0.9rem" mb="2">
+      <Text paddingTop="3" color="primary.300" fontSize="0.9rem" mb="2">
         Monday 10 December, 2020
       </Text>
-      <EventCards />
-      <EventCards />
-      <EventCards />
+      <EventCards bg="primary.200" color="primary.300" />
+      <EventCards bg="blue.100" color="blue.100" />
+      <EventCards bg="lightgreen" color="red" />
     </Flex>
   );
 };

@@ -1,0 +1,12 @@
+.main__dashboard {
+  width: 75%; }
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .main__dashboard {
+      width: 100%; } }
+
+.main__events {
+  width: 25%; }
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .main__events {
+      margin-right: -40%;
+      width: 40%; } }

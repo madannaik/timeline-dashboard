@@ -11,28 +11,27 @@ export const TimeLine = () => {
       boxShadow="0px 2px 9px 4px rgba(0, 0, 0, 0.1)"
       p="2"
       borderRadius="6"
+      paddingTop="10px"
+      position="relative"
+      zIndex="2"
     >
-      <Flex width="15%" flexDirection="column" alignItems="center">
-        <Box height="6rem" mb=".5rem">
-          9:00 AM
-        </Box>
-        <Box height="6rem" mb=".5rem">
-          10:00 AM
-        </Box>
-        <Box height="6rem" mb=".5rem">
+      <Flex width="10rem" flexDirection="column" alignItems="center">
+        <Box height="6.2rem">9:00 AM</Box>
+        <Box height="6.2rem">10:00 AM</Box>
+        <Box height="6.2rem" mb="0.5rem">
           11:00 AM
         </Box>
-        <Box height="6rem" mb=".5rem">
+        <Box height="6.2rem" mb="0.5rem">
           12:00 PM
         </Box>
-        <Box height="6rem" mb=".5rem">
+        <Box height="6.2rem" mb="0.5rem">
           2:00 PM
         </Box>
       </Flex>
 
       <Box overflowX="auto">
         <Grid
-          gridTemplateColumns="repeat(8,120px)"
+          gridTemplateColumns="repeat(8,130px)"
           gridTemplateRows="repeat(6,6rem)"
           gap="10px"
           overflowX="scroll"

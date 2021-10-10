@@ -1,13 +1,14 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import "../styles/checkbox.css";
 import { Checkbox, VStack } from "@chakra-ui/react";
 export const Custombox = () => {
   return (
-    <Box className="checkbox" w="36">
+    <Box className="checkbox" w="32" mr="4">
       <Box>
         <label className="checkbox__lab" htmlFor="checkbox-">
-          Filters
+          <Checkbox marginRight="2"></Checkbox>
+          ALL
         </label>
         <input
           className="checkbox__inp"
@@ -15,18 +16,27 @@ export const Custombox = () => {
           name=""
           id="checkbox-"
         />
-        <Box className="checkbox__select">
-          <VStack spacing={10} direction="row">
-            <Checkbox size="sm" colorScheme="red">
-              Checkbox
+        <Box className="checkbox__select" bg="white">
+          <Flex spacing={2} flexDirection="column" bg="white">
+            <Checkbox size="md" colorScheme="red">
+              Remainders
             </Checkbox>
-            <Checkbox size="sm" colorScheme="red">
-              Checkbox
+            <Checkbox size="md" colorScheme="red">
+              Activities
             </Checkbox>
-            <Checkbox size="sm" colorScheme="red">
-              Checkbox
+            <Checkbox size="md" colorScheme="red">
+              Classes
             </Checkbox>
-          </VStack>
+            <Checkbox size="md" colorScheme="red">
+              Exams
+            </Checkbox>
+            <Checkbox size="md" colorScheme="red">
+              Assignments
+            </Checkbox>
+            <Checkbox size="md" colorScheme="red">
+              Happenings
+            </Checkbox>
+          </Flex>
         </Box>
       </Box>
     </Box>

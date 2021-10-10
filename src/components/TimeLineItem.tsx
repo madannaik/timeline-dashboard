@@ -21,7 +21,8 @@ export const TimeLineItem = (props: TimeLinePropsType) => {
         color="white"
         position="relative"
         borderRadius="10px"
-        paddingLeft="10%"
+        paddingLeft="5%"
+        paddingRight="5%"
         _after={{
           content: `""`,
           position: "absolute",
@@ -35,17 +36,17 @@ export const TimeLineItem = (props: TimeLinePropsType) => {
         alignItems="center"
         flexDirection="column"
       >
-        <Flex flexDirection="row" justifyContent="flex-start">
+        <Flex w="100%" flexDirection="row" justifyContent="space-evenly">
           <Box>
             <Text alignSelf="flex-start">{props.children}</Text>
-            <Flex width="100%" justifyContent="space-evenly">
+            <Flex width="100%" justifyContent="space-around">
               <Text>9-12 PM</Text>
               <Spacer />
               <Text>9-12 PM</Text>
               <Spacer />
             </Flex>
           </Box>
-          <Image src={Icon} objectFit="contain"></Image>
+          <Image src={Icon} objectFit="contain" />
         </Flex>
       </Flex>
     </GridItem>

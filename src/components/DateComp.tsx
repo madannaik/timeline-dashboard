@@ -4,7 +4,9 @@ import { Box, Text, VStack } from "@chakra-ui/react";
 export const DateComp = () => {
   return (
     <VStack
-      backgroundColor="primary.100"
+      _hover={{
+        backgroundColor: "primary.100",
+      }}
       paddingX=".5rem"
       paddingTop=".5rem"
       borderRadius="5px"

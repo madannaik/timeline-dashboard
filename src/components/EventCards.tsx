@@ -10,12 +10,16 @@ import {
   AvatarGroup,
 } from "@chakra-ui/react";
 import { LockIcon, TimeIcon } from "@chakra-ui/icons";
-
-export const EventCards = () => {
+import Location from "../assets/Vector.svg";
+type EventCardProps = {
+  color: string;
+  bg?: string;
+};
+export const EventCards = (props: EventCardProps) => {
   return (
     <Box
       alignSelf="center"
-      backgroundColor="blue.100"
+      backgroundColor={props.bg}
       borderRadius="10px"
       p="3"
       mb="2"
@@ -25,8 +29,7 @@ export const EventCards = () => {
         small description about the event within two lines
       </Text>
       <Button
-        leftIcon={<LockIcon />}
-        p="0"
+        leftIcon={<img src={Location} alt="Location-icon" />}
         bg="transparent"
         _hover={{
           bg: "transparent",
@@ -38,7 +41,7 @@ export const EventCards = () => {
       >
         Location
       </Button>
-      <Divider bg="red" />
+      <Divider bg={props.color} />
       <Flex justifyContent="space-between">
         <Button
           leftIcon={<TimeIcon fontSize=".9rem" />}
