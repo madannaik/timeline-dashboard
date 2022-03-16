@@ -1,5 +1,5 @@
 
-
+![Preview](https://github.com/madannaik/timeline-dashboard/blob/master/src/assets/screenshot%20(1).png)
 
 
 # Getting Started with Create React App
